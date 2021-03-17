@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">まいたけ占い</div>
+    <div class="header2">今週の運勢をチェック</div>
+
+     <?php
+
+        if(isset($_POST['seiza1'])) {
+        　  echo "牡羊座";
+        } else if(isset($_POST['seiza2'])) {
+        　  echo "牡牛座";
+        }else if(isset($_POST['seiza3'])) {
+        　  echo "双子座";
+         }else if(isset($_POST['seiza4'])) {
+        　  echo "蟹座";
+         }else if(isset($_POST['seiza5'])) {
+        　  echo "獅子座";
+         }else if(isset($_POST['seiza6'])) {
+        　  echo "乙女座";
+         }else if(isset($_POST['seiza7'])) {
+        　  echo "天秤座";
+        }else if(isset($_POST['seiza8'])) {
+        　  echo "蠍座";
+        }else if(isset($_POST['seiza9'])) {
+        　  echo "射手座";
+        }else if(isset($_POST['seiza10'])) {
+        　  echo "山羊座";
+         }else if(isset($_POST['seiza11'])) {
+        　  echo "水瓶座";
+        }else if(isset($_POST['seiza12'])) {
+        　  echo "魚座";
+    }
+    ?>
+
+    <form action="input.php" method="post">
+        <input type="image" name="seiza1" src="IMG/seiza_mark01_ohitsuji.png"/>
+        <input type="image" name="seiza2" src="IMG/seiza_mark02_oushi.png"/>
+        <input type="image" name="seiza3" src="IMG/seiza_mark03_futago.png"/>
+        <input type="image" name="seiza4" src="IMG/seiza_mark04_kani.png"/>
+        <input type="image" name="seiza5" src="IMG/seiza_mark05_shishi.png"/>
+        <input type="image" name="seiza6" src="IMG/seiza_mark06_otome.png"/>
+        <input type="image" name="seiza7" src="IMG/seiza_mark07_tenbin.png"/>
+        <input type="image" name="seiza8" src="IMG/seiza_mark08_sasori.png"/>
+        <input type="image" name="seiza9" src="IMG/seiza_mark09_ite.png"/>
+        <input type="image" name="seiza10" src="IMG/seiza_mark10_yagi.png"/>
+        <input type="image" name="seiza11" src="IMG/seiza_mark11_mizugame.png"/>
+        <input type="image" name="seiza11" src="IMG/seiza_mark12_uo.png"/>
+
+    </form>
+    
+</body>
+</html>
+
+
